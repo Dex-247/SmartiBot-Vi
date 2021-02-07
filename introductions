@@ -1,0 +1,22 @@
+var smarti = require("Smartibot");
+var g = require("Smartibot-display").connect(smarti.E1);
+equire("Font6x8").add(Graphics);
+
+var pos = 0; // a variable to set the horizontal position of the text
+var count = 0; // a counter that we will use to count to a set value and then resets to 0 and start counting again
+var message ="Hello, I'm a Smartibot";
+
+function draw(){
+if (count < ((message.length*4) + 32)){
+ count ++;
+}
+ else {count = 0;}
+ 
+pos = 16 - count;
+ 
+g.clear(); //Clear the screen 
+g.setColor(150); // set brightness - 0..255
+g.setFont6x8(); // set the font to 6x8 size
+g.drawString(message,pos,1);
+g.flip(),
+}
