@@ -4,7 +4,7 @@ equire("Font6x8").add(Graphics);
 
 var pos = 0; // a variable to set the horizontal position of the text
 var count = 0; // a counter that we will use to count to a set value and then resets to 0 and start counting again
-var message ="Hello, I'm a Smartibot";
+var message ="Hello, I'm Smartibot";
 
 function draw(){
 if (count < ((message.length*4) + 32)){
